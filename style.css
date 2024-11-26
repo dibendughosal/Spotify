@@ -6,19 +6,38 @@
 .container{
     display: flex;
     gap: 3px;
-}
-.header{
+    background-color: black;
+    height: 100vw;
     width: 100vw;
-    height: 48px;
+    color: white;
+}
+
+ul li{
+    width: 20px;
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    
+    gap: 3px;
+    filter: invert(1);
+    color: black;
+    padding-top: 12px;
+}
+.logo{
+    filter: invert(1);
 }
 .left{
     border: 2px solid;
     width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
 }
 .right{
     border: 2px solid red;
     width: 75vw;
+}
+.home,.library{
+    background-color: #121212;
+    border-radius: 7px;
+    padding: 10px;
 }
