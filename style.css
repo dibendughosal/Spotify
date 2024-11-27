@@ -92,10 +92,11 @@ ul li{
     margin: 20px;
 }
 .cardContainer .card{
-    width: 240px;
+    width: 200px;
     padding: 10px;
     border-radius: 15px;
     background-color: #252525;
+    position: relative;
 }
 .card img{
     width: 100%;
@@ -103,4 +104,18 @@ ul li{
 }
 .card > *{
     padding-top: 5px;
+}
+.play {
+    width: 40px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 74px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
 }
