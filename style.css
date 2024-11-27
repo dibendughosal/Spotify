@@ -41,7 +41,6 @@ ul li{
     filter: invert(1);
 }
 .left{
-    border: 2px solid;
     width: 25vw;
     display: flex;
     flex-direction: column;
@@ -49,8 +48,9 @@ ul li{
     padding: 20px;
 }
 .right{
-    border: 2px solid red;
     width: 75vw;
+    margin: 20px 0px;
+
 }
 .home,.library{
     background-color: #121212;
@@ -67,4 +67,40 @@ ul li{
 }
 .footer a{
     color: grey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    height: 60px;
+    align-items: center;
+}
+.header > *{
+    padding: 20px;
+}
+.hamburgerContainer{
+    display: flex;
+    align-items: center;
+}
+.spotifyPlaylists h1{
+    padding: 10px;
+}
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.cardContainer .card{
+    width: 240px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #252525;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card > *{
+    padding-top: 5px;
 }
