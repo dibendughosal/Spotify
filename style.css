@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .container{
     display: flex;
@@ -20,6 +22,20 @@ ul li{
     filter: invert(1);
     color: black;
     padding-top: 12px;
+    font-weight: bold;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 50vh;
+}
+.heading{
+    display: flex;
+    gap: 10px;
+}
+.library img{
+    width: 24px;
 }
 .logo{
     filter: invert(1);
@@ -40,4 +56,15 @@ ul li{
     background-color: #121212;
     border-radius: 7px;
     padding: 10px;
+}
+
+.footer{
+    display: flex;
+    gap: 13px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer a{
+    color: grey;
 }
