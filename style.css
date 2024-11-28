@@ -50,6 +50,8 @@ ul li{
 .right{
     width: 75vw;
     margin: 20px 0px;
+    position: relative;
+    color: white;
 
 }
 .home,.library{
@@ -97,6 +99,8 @@ ul li{
     border-radius: 15px;
     background-color: #252525;
     position: relative;
+    overflow-y: scroll;
+    max-height: 70vh;
 }
 .card img{
     width: 100%;
@@ -104,6 +108,12 @@ ul li{
 }
 .card > *{
     padding-top: 5px;
+}
+.card:hover{
+    /* transition: all 1s ease-in; */
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 205px;
 }
 .play {
     width: 40px;
@@ -118,4 +128,56 @@ ul li{
     right: 17px;
     opacity: var(--a);
     transition: all 1s ease-out;
+}
+.signupBtn{
+    background-color: black;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px white solid;
+}
+.signupBtn:hover{
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    border: 1px solid white;
+}
+.button{
+    margin: 0px 12px;
+}
+.loginBtn{
+    width: 80px;
+    padding: 10px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px black;
+    
+}
+.loginBtn:hover{
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    font-size: 1.01em;
+    border: 1px wheat solid;
+    transition: all 1.2s ease-in-out;
+    cursor: pointer;
+}
+.playbar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: aliceblue;
+}
+.songButton{
+    display: flex;
+    justify-content: center;
+}
+.songList ul li{
+    display: flex;
+    width: 100%;
+    
 }
