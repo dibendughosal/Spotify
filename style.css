@@ -12,6 +12,7 @@
     height: 100vw;
     width: 100vw;
     color: white;
+    overflow-x: hidden;
 }
 
 ul li{
@@ -19,7 +20,6 @@ ul li{
     list-style: none;
     display: flex;
     gap: 3px;
-    filter: invert(1);
     color: black;
     padding-top: 12px;
     font-weight: bold;
@@ -37,7 +37,7 @@ ul li{
 .library img{
     width: 24px;
 }
-.logo{
+.invert{
     filter: invert(1);
 }
 .left{
@@ -94,12 +94,12 @@ ul li{
     margin: 20px;
 }
 .cardContainer .card{
-    width: 200px;
+    width: 150px;
     padding: 10px;
     border-radius: 15px;
     background-color: #252525;
     position: relative;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     max-height: 70vh;
 }
 .card img{
@@ -124,14 +124,14 @@ ul li{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 74px;
-    right: 17px;
+    top: 100px;
+    right: 15px;
     opacity: var(--a);
     transition: all 1s ease-out;
 }
 .signupBtn{
     background-color: black;
-    color: rgb(34, 34, 34);
+    color: rgba(247, 231, 231, 0.535);
     font-weight: bold;
     width: 80px;
     padding: 10px;
@@ -171,13 +171,46 @@ ul li{
     width: 100%;
     padding: 15px;
     background-color: aliceblue;
-}
-.songButton{
     display: flex;
     justify-content: center;
 }
-.songList ul li{
+.songbuttons {
     display: flex;
-    width: 100%;
-    
+    justify-content: center;
+    gap: 16px;
+}
+
+.songList {
+    height: 544px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.songList ul {
+    padding: 0 12px;
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid rgba(146, 143, 143, 0.491);
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
 }
